@@ -1,10 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
-const SRC_DIR = path.join(__dirname, "/src");
 
 module.exports = {
   context: __dirname,
-  entry: `${SRC_DIR}/ClientApp.jsx`,
+  entry: entry: [
+    "webpack-dev-server/client?https://datart-client.herokuapp.com",
+    "./js/ClientApp.jsx"
+  ],
   devtool: "cheap-eval-source-map",
   output: {
     path: path.join(__dirname, "public"),

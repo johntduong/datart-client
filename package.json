@@ -28,10 +28,7 @@
     "react-photo-gallery": "^6.0.22",
     "react-router-dom": "^4.2.2",
     "webpack": "^3.10.0",
-    "webpack-dev-middleware": "^2.0.4"
-  },
-  "devDependencies": {
-    "babel-loader": "^7.1.2",
+    "webpack-dev-middleware": "^2.0.4",
     "webpack-dev-server": "^2.11.1"
   }
 }
