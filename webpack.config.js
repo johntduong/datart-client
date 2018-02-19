@@ -3,7 +3,7 @@ const webpack = require("webpack");
 
 module.exports = {
   context: __dirname,
-  entry: entry: [
+  entry: [
     "webpack-dev-server/client?https://datart-client.herokuapp.com",
     "./js/ClientApp.jsx"
   ],
