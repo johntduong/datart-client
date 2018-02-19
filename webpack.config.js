@@ -3,10 +3,7 @@ const webpack = require("webpack");
 
 module.exports = {
   context: __dirname,
-  entry: [
-    "./src/ClientApp.jsx",
-    "webpack-dev-server/client?http://localhost:8080"
-  ],
+  entry: ["./src/ClientApp.jsx"],
   devtool: "cheap-eval-source-map",
   output: {
     path: path.join(__dirname, "public"),
