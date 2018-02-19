@@ -3,10 +3,7 @@ const webpack = require("webpack");
 
 module.exports = {
   context: __dirname,
-  entry: [
-    "webpack-dev-server/client?https://datart-client.herokuapp.com",
-    "./js/ClientApp.jsx"
-  ],
+  entry: ["./js/ClientApp.jsx"],
   devtool: "cheap-eval-source-map",
   output: {
     path: path.join(__dirname, "public"),
