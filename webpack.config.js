@@ -7,6 +7,7 @@ module.exports = {
     "./src/ClientApp.jsx",
     "webpack-dev-server/client?http://localhost:8080"
   ],
+  devtool: "cheap-eval-source-map",
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
