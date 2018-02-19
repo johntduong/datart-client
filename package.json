@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "init-webpack": "webpack --config webpack.config.js",
-    "init-server": "node server/index.js",
-    "start": "npm run init-webpack && npm run init-server",
-    "watch": "webpack --watch"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p"
   },
   "name": "datart",
   "version": "1.0.0",
