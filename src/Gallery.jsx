@@ -58,33 +58,8 @@ class Gallery extends Component {
   constructor() {
     super();
     this.state = { currentImage: 0 };
-    this.closeLightbox = this.closeLightbox.bind(this);
-    this.openLightbox = this.openLightbox.bind(this);
-    this.gotoNext = this.gotoNext.bind(this);
-    this.gotoPrevious = this.gotoPrevious.bind(this);
   }
-  openLightbox(event, obj) {
-    this.setState({
-      currentImage: obj.index,
-      lightboxIsOpen: true
-    });
-  }
-  closeLightbox() {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false
-    });
-  }
-  gotoPrevious() {
-    this.setState({
-      currentImage: this.state.currentImage - 1
-    });
-  }
-  gotoNext() {
-    this.setState({
-      currentImage: this.state.currentImage + 1
-    });
-  }
+
   render() {
     return (
       <div>
@@ -92,17 +67,7 @@ class Gallery extends Component {
         <div className="gallery-img-container">
           <img className="gallery-img" src={`../images/gallery.jpg`} />
         </div>
-        <div className="grid-container">
-          <Grid className photos={PHOTO_SET} onClick={this.openLightbox} />
-          <Lightbox
-            images={PHOTO_SET}
-            onClose={this.closeLightbox}
-            onClickPrev={this.gotoPrevious}
-            onClickNext={this.gotoNext}
-            currentImage={this.state.currentImage}
-            isOpen={this.state.lightboxIsOpen}
-          />
-        </div>
+        <div className="grid-container" />
         <Footer />
       </div>
     );
