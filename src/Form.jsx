@@ -18,13 +18,7 @@ class Form extends Component {
 
   handleChange = e => {
     const change = {};
-    // console.log("THIS IS EVENT", e);
-    // change[e.target.name] = change[e.target.value];
-    // console.log("THIS IS THE CHANGE", change);
-    console.log("TARGET NAME", e.target.name);
-    console.log("TARGET VALUE", e.target.value);
     change[e.target.name] = e.target.value;
-    console.log("CHANGE", change);
     this.setState(change);
   };
 
