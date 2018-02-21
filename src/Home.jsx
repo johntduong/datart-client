@@ -14,7 +14,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Header {...props} />
-        <img className="banner" src={`../images/banner.jpg`} />
+        {/* {<img className="banner" src={`../images/banner.jpg`} />
         <div className="welcomecontainer">
           <h4
             className="welcometext"
@@ -26,11 +26,11 @@ class Home extends Component {
             massa a ipsum vulputate, sed fermentum risus egestas. Mauris rhoncus
             dolor vitae ex dignissim molestie.
           </h4>
-        </div>
+        </div>} */}
         <div className="slideshow-container">
           <Carousel />
         </div>
-        <Footer />
+        {/* {<Footer />} */}
       </div>
     );
   }

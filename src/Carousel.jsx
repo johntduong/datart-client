@@ -8,6 +8,8 @@ class Carousel extends Component {
         <figure>
           <img src={`../images/slideshow/Hinh 14.jpeg`} />
           <img src={`../images/slideshow/Hinh 15a.jpeg`} />
+          <img src={`../images/slideshow/Hinh 14.jpeg`} />
+          <img src={`../images/slideshow/Hinh 15a.jpeg`} />
         </figure>
       </div>
     );
