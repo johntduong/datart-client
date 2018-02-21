@@ -10,7 +10,7 @@ const Contact = () => {
     <div>
       <Header handler={this.handleToggle} />
       <Form />
-      <Footer />
+      {/* {<Footer />} */}
     </div>
   );
 };

@@ -10,9 +10,10 @@ import MapsPersonPin from "material-ui/svg-icons/maps/person-pin";
 
 const muiTheme = getMuiTheme({
   tabs: {
+    fontFamily: "'Lato', sans-serif",
     backgroundColor: "#fff",
-    textColor: "#4b626d",
-    selectedTextColor: "#4b626d"
+    textColor: "#d0b181",
+    selectedTextColor: "#d0b181"
   }
 });
 
@@ -37,25 +38,46 @@ class Header extends Component {
       <div className="header-container">
         <MuiThemeProvider muiTheme={muiTheme}>
           <Tabs
-            inkBarStyle={{ backgroundColor: "#4b626d" }}
+            inkBarStyle={{ backgroundColor: "#d0b181" }}
             value={this.state.tabSelected}
             onChange={this.handleChange}
           >
             <Tab
+              style={{
+                margin: "auto"
+              }}
               value="/"
               path="/"
               icon={<FontIcon className="material-icons">home</FontIcon>}
               label="HOME"
             />
             <Tab
+              style={{
+                margin: "auto"
+              }}
               value="gallery"
               icon={<FontIcon className="material-icons">brush</FontIcon>}
               label="GALLERY"
             />
+            <img
+              className="material-icons header-logo"
+              src={`../images/logo4.png`}
+            />
             <Tab
+              style={{
+                margin: "auto"
+              }}
               value="contact"
               icon={<FontIcon className="material-icons">email</FontIcon>}
               label="CONTACT"
+            />
+            <Tab
+              style={{
+                margin: "auto"
+              }}
+              value="about"
+              icon={<FontIcon className="material-icons">person</FontIcon>}
+              label="ABOUT"
             />
           </Tabs>
         </MuiThemeProvider>

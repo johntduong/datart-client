@@ -6,10 +6,10 @@ class Carousel extends Component {
     return (
       <div className="slider">
         <figure>
-          <img src={`../images/slideshow/Hinh 14.jpeg`} />
-          <img src={`../images/slideshow/Hinh 15a.jpeg`} />
-          <img src={`../images/slideshow/Hinh 14.jpeg`} />
-          <img src={`../images/slideshow/Hinh 15a.jpeg`} />
+          <img src={`../images/slideshow/horses.jpg`} />
+          <img src={`../images/slideshow/buddhas.jpeg`} />
+          <img src={`../images/slideshow/horses.jpg`} />
+          <img src={`../images/slideshow/buddhas.jpeg`} />
         </figure>
       </div>
     );

@@ -68,7 +68,7 @@ class Gallery extends Component {
           <img className="gallery-img" src={`../images/gallery.jpg`} />
         </div>
         <div className="grid-container" />
-        <Footer />
+        {/* {<Footer />} */}
       </div>
     );
   }
