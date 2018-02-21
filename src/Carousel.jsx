@@ -7,19 +7,16 @@ class Carousel extends Component {
       <div className="slider">
         <figure>
           <img
-            src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg`}
+            src={`https://images-na.ssl-images-amazon.com/images/I/814Qpd98BKL._SL1440_.jpg`}
           />
           <img
-            src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/taj-mahal_copy.jpg`}
+            src={`https://images-na.ssl-images-amazon.com/images/I/814Qpd98BKL._SL1440_.jpg`}
           />
           <img
-            src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ibiza.jpg`}
+            src={`https://images-na.ssl-images-amazon.com/images/I/814Qpd98BKL._SL1440_.jpg`}
           />
           <img
-            src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ankor-wat.jpg`}
-          />
-          <img
-            src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg`}
+            src={`https://images-na.ssl-images-amazon.com/images/I/814Qpd98BKL._SL1440_.jpg`}
           />
         </figure>
       </div>
