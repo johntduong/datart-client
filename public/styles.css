@@ -142,6 +142,8 @@ div.slider figure {
 .form-container {
   margin: auto;
   text-align: center;
+  background-image: url("/images/contact-main.jpg");
+  background-size: 100%;
   background-color: white;
 }
 
