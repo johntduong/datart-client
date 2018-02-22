@@ -8,12 +8,6 @@ class Gallery extends Component {
     return (
       <div>
         <Header handler={this.handleToggle} />
-        <div className="gallery-img-container">
-          <img
-            className="gallery-main"
-            src={`../images/gallery/gallery-main.jpg`}
-          />
-        </div>
         <div className="grid-container">
           <ImageGridList />
         </div>

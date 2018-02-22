@@ -41,12 +41,6 @@ class Form extends Component {
   render() {
     return (
       <div className="form-container">
-        <div className="form-img-container">
-          <img
-            className="form-img"
-            src={`../images/gallery/contact-main.jpg`}
-          />
-        </div>
         <MuiThemeProvider>
           <TextField
             name="from"

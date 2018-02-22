@@ -110,16 +110,17 @@ div.slider figure {
 
 .grid-container {
   margin: auto;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .form-img-container {
   background-color: #ffffff;
+  max-width: 100%;
 }
 
 .form-img {
-  max-width: 80%;
   margin: auto;
+  max-width: 100%;
 }
 
 .gallery-img-container {
@@ -127,7 +128,7 @@ div.slider figure {
 }
 
 .gallery-main {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .gallery-img {
