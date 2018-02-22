@@ -42,7 +42,10 @@ class Form extends Component {
     return (
       <div className="form-container">
         <div className="form-img-container">
-          <img className="form-img" src={`../images/contactus.jpg`} />
+          <img
+            className="form-img"
+            src={`../images/gallery/contact-main.jpg`}
+          />
         </div>
         <MuiThemeProvider>
           <TextField

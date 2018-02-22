@@ -1,26 +1,48 @@
 import React, { Component } from "react";
-import ImageGallery from "react-image-gallery";
+import sizeMe from "react-sizeme";
+import StackGrid from "react-stack-grid";
 import images from "../data.json";
 
 class ImageGridList extends Component {
   render() {
-    const images = [
-      {
-        original: "http://lorempixel.com/1000/600/nature/1/",
-        thumbnail: "http://lorempixel.com/250/150/nature/1/"
-      },
-      {
-        original: "http://lorempixel.com/1000/600/nature/2/",
-        thumbnail: "http://lorempixel.com/250/150/nature/2/"
-      },
-      {
-        original: "http://lorempixel.com/1000/600/nature/3/",
-        thumbnail: "http://lorempixel.com/250/150/nature/3/"
-      }
-    ];
+    const { size: { width } } = this.props;
 
-    return <ImageGallery items={images} />;
+    return (
+      <StackGrid
+        monitorImagesLoaded={true}
+        columnWidth={width <= 768 ? "100%" : "33.33%"}
+      >
+        <div key="key1">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key2">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key3">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key4">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key5">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key6">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key7">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key8">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        <div key="key9">
+          <img className="gallery-img" src={`../images/gallery/test.jpg`} />
+        </div>
+        {/* {<img className="gallery-img" src={`../images/gallery/test.jpg`} />} */}
+      </StackGrid>
+    );
   }
 }
 
-export default ImageGridList;
+export default sizeMe()(ImageGridList);

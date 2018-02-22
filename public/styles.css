@@ -114,7 +114,7 @@ div.slider figure {
 }
 
 .form-img-container {
-  background-color: #141517;
+  background-color: #ffffff;
 }
 
 .form-img {
@@ -126,8 +126,12 @@ div.slider figure {
   text-align: center;
 }
 
-.gallery-img {
+.gallery-main {
   max-width: 80%;
+}
+
+.gallery-img {
+  max-width: 100%;
 }
 
 .contact-submit-container {
@@ -136,7 +140,6 @@ div.slider figure {
 
 .form-container {
   margin: auto;
-  max-width: 80%;
   text-align: center;
   background-color: white;
 }
