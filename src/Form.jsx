@@ -42,6 +42,9 @@ class Form extends Component {
     return (
       <div className="form-container">
         <MuiThemeProvider>
+          <br />
+          <br />
+          <br />
           <TextField
             name="from"
             hintText="Your email address"
@@ -65,8 +68,26 @@ class Form extends Component {
             onChange={this.handleChange}
           />
           <br />
+          <br />
           <div className="contact-submit-container">
             <RaisedButton label="Submit" onClick={this.handleSubmit} />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </MuiThemeProvider>
       </div>
