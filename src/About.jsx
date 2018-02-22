@@ -5,7 +5,9 @@ const About = () => {
   return (
     <div>
       <Header handler={this.handleToggle} />
-      <div className="gallery-img-container" />
+      <div className="gallery-img-container">
+        <img className="about-img-text" src={`../images/about-text.jpg`} />
+      </div>
     </div>
   );
 };

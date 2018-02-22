@@ -145,6 +145,10 @@ div.slider figure {
   background-color: white;
 }
 
+.about-img-text {
+  max-width: 100%;
+}
+
 .footer {
   margin: auto;
   background-color: white;
