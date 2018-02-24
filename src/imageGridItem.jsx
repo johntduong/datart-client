@@ -1,23 +1,10 @@
 import React, {Component} from "react";
 import images from "../data.json";
 
-class imageGridItem extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            key: 0
-        }
-    }
-    render() {
-        return (
-            <div key="key1">
-                <img
-                    className="gallery-img"
-                    src={`../images/gallery/bathingwoman2.jpg`}
-                />
-            </div>
-        )
-    }
-}
+const imageGridItem = (props) => (
+    <div key="key1">
+        <img className="gallery-img" alt={`${props.title} Show Poster`} src={`/public/img/posters/${props.poster}`} />
+    </div>
+)
 
 export default imageGridItem;
