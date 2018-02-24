@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import images from "../data.json";
 
-const imageGridItem = (props) => (
-    <div key="key1">
-        <img className="gallery-img" alt={`${props.title} Show Poster`} src={`/public/img/posters/${props.poster}`} />
+const ImageGridItem = (props) => (
+    <div className="grid-item-container" key="key1">
+        <img className="gallery-img" alt={`Picture of sculpture titled ${props.title}`} src={`/images/gallery/${props.poster}`} />
+        <div className="after">This is some content</div>
     </div>
 )
 
-export default imageGridItem;
+export default ImageGridItem;

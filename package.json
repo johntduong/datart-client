@@ -2,7 +2,9 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server/index.js",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p",
+    "watch": "webpack --watch",
+    "local": "node server/index.js"
   },
   "name": "datart",
   "version": "1.0.0",

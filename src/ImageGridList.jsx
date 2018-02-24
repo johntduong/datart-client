@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import sizeMe from "react-sizeme";
 import StackGrid from "react-stack-grid";
+import ImageGridItem from "./ImageGridItem";
 import images from "../data.json";
 
 class ImageGridList extends Component {
@@ -12,7 +13,10 @@ class ImageGridList extends Component {
         monitorImagesLoaded={true}
         columnWidth={width <= 768 ? "100%" : "33.33%"}
       >
-        <div key="key1">
+        {
+          images.art.map((art)=> <ImageGridItem key={art.itemNum} {...art} /> )
+        }
+        {/* {<div key="key1">
           <img
             className="gallery-img"
             src={`../images/gallery/bathingwoman2.jpg`}
@@ -122,7 +126,7 @@ class ImageGridList extends Component {
         </div>
         <div key="key21">
           <img className="gallery-img" src={`../images/gallery/stmary1.jpg`} />
-        </div>
+        </div>} */}
         {/* {<img className="gallery-img" src={`../images/gallery/test.jpg`} />} */}
       </StackGrid>
     );

@@ -135,6 +135,21 @@ div.slider figure {
   max-width: 100%;
 }
 
+.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  color:  #FFF;
+}
+
+.grid-item-container:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .4);
+}
+
 .contact-submit-container {
   margin-top: 15px;
 }
