@@ -8,10 +8,10 @@ class Gallery extends Component {
     return (
       <div>
         <Header handler={this.handleToggle} />
-        <div className="grid-container">
-          <ImageGridList />
-        </div>
+        <ImageGridList />
         {/* {<Footer />} */}
+        {/* {100% w/h element that shows full picture
+            onclick of any ImageGridItem, } */}
       </div>
     );
   }
