@@ -8,13 +8,18 @@ class ImageGridList extends Component {
   constructor() {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
+      imageSelected: "test.jpg"
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  handleClick = e => {
+    console.log("EVENT.TARGET", e.target);
+    this.setState({
+      isOpen: !this.state.isOpen,
+      imageSelected: e.target.src
+    });
   };
   render() {
     const { size: { width } } = this.props;
@@ -28,6 +33,7 @@ class ImageGridList extends Component {
           {images.art.map(art => (
             <ImageGridItem
               key={art.itemNum}
+              value={art.poster}
               handler={this.handleClick}
               {...art}
             />
