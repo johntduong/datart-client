@@ -24,24 +24,35 @@ class ImageGridList extends Component {
   render() {
     const { size: { width } } = this.props;
 
-    return (
-      <div className="grid-container">
-        <StackGrid
-          monitorImagesLoaded={true}
-          columnWidth={width <= 768 ? "100%" : "33.33%"}
-        >
-          {images.art.map(art => (
-            <ImageGridItem
-              key={art.itemNum}
-              value={art.poster}
-              handler={this.handleClick}
-              {...art}
-            />
-          ))}
-        </StackGrid>
-        <div className="modal" />
-      </div>
-    );
+    if (this.state.isOpen) {
+      return (
+        <div className="grid-container">
+          <div className="modal">
+            <div className="modal-slide-container">
+              <img className="modal-slide" src={this.state.imageSelected} />
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="grid-container">
+          <StackGrid
+            monitorImagesLoaded={true}
+            columnWidth={width <= 768 ? "100%" : "33.33%"}
+          >
+            {images.art.map(art => (
+              <ImageGridItem
+                key={art.itemNum}
+                value={art.poster}
+                handler={this.handleClick}
+                {...art}
+              />
+            ))}
+          </StackGrid>
+        </div>
+      );
+    }
   }
 }
 

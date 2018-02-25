@@ -14,7 +14,6 @@ const ImageGridItem = props => (
     />
     <div className="after">
       <p>Title: {props.title}</p>
-      <p>Title: {props.title}</p>
     </div>
   </div>
 );

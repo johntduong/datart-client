@@ -150,6 +150,24 @@ div.slider figure {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.modal {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+.modal-slide-container {
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.modal-slide {
+  margin: auto;
+  max-width: 80%;
+}
+
 .contact-submit-container {
   margin-top: 15px;
 }
