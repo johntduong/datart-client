@@ -15,7 +15,7 @@
   "plugins": ["babel-plugin-transform-class-properties"],
   "env": {
     "test": {
-      "plugins": ["transform-es2015-modules-commonjs"]
+      "plugins": ["babel-plugin-transform-es2015-modules-commonjs"]
     }
   }
 }

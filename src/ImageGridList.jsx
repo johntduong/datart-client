@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import sizeMe from "react-sizeme";
 import StackGrid from "react-stack-grid";
-import ImageGridItem from "./ImageGridItem";
+import ImageGridItem from "./ImageGridItem.jsx";
 import images from "../data.json";
 
 class ImageGridList extends Component {
