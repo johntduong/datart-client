@@ -198,3 +198,9 @@ div.slider figure {
   margin: auto;
   padding: 5px;
 }
+
+@media (max-width: 822px) {
+  .form-container {
+    background-image: none;
+  }
+}
