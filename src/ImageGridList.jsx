@@ -35,23 +35,7 @@ class ImageGridList extends Component {
         </div>
       );
     } else {
-      return (
-        <div className="grid-container">
-          <StackGrid
-            monitorImagesLoaded={true}
-            columnWidth={width <= 768 ? "100%" : "33.33%"}
-          >
-            {images.art.map(art => (
-              <ImageGridItem
-                key={art.itemNum}
-                value={art.poster}
-                handler={this.handleClick}
-                {...art}
-              />
-            ))}
-          </StackGrid>
-        </div>
-      );
+      return <div className="grid-container" />;
     }
   }
 }
