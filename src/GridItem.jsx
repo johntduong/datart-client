@@ -19,15 +19,16 @@ import images from "../data.json";
 //   </div>
 // );}
 
-const ImageGridItem = props => (
-  <div className="grid-item-container" key="key1">
-    <img
-      className="gallery-img"
-      alt={`Picture of sculpture titled ${props.title}`}
-      src={`/images/gallery/${props.poster}`}
-    />
-    <div className="after">This is some content</div>
-  </div>
-);
+const GridItem = props => {
+  return (
+    <div className="grid-item-container" key={`${props.itemNum}`}>
+      <img
+        className="gallery-img"
+        alt={`Picture of sculpture titled ${props.title}`}
+        src={`/images/gallery/${props.poster}`}
+      />
+    </div>
+  );
+};
 
-export default ImageGridItem;
+export default GridItem;
